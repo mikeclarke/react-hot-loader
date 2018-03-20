@@ -13,7 +13,7 @@
     "ci": "scripts/ci.sh",
     "format": "prettier --write \"**/*.{js,md,ts,json}\" *.{js,md,ts,json}",
     "lint": "eslint .",
-    "prepublishOnly": "yarn build",
+    "prepare": "yarn build",
     "prebuild": "rm -rf dist",
     "precommit": "lint-staged",
     "release": "standard-version -p && conventional-github-releaser -p angular",
